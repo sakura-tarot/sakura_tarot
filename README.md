@@ -1,22 +1,18 @@
-# Sakura_project
-
 ### Team: Witchy Code
-
-- Manuela Perez (Scrum Master - Developer)
-- Jacinemi Urquiola (Product Owner - Developer)
-- Rosmery Medina (Developer)
-- Valentina (Developer)
 
 # 🎧 Sakura Tarot
 
 
+
 ## 💻 Technologies
+
 <div> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </div>
 <img src="https://img.icons8.com/?size=1x&id=t5K2CR8feVdX&format=gif" alt="react" width="40" heigth="40"/> </div>
 
 ## 🛠 Tools
+
 <div>
 <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/>
 <img src="https://github.com/EqualWaveStudio/soundwave/assets/131855670/465e872f-6242-48b4-964c-7f5c3e749685" alt="jest" width="40" height="40"/>
@@ -31,3 +27,10 @@ A list of technologies or tools used within the project:
 *  [Visual Studio Code](https://code.visualstudio.com/): Version 1.79.
 *  [Slack](https://slack.com/intl/es-es)
 *  [Zoom](https://zoom.us/es)
+
+## 👾 Developers
+
+- Manuela Perez (Scrum Master - Developer)
+- Jacinemi Urquiola (Product Owner - Developer)
+- Rosmery Medina (Developer)
+- Valentina (Developer)
