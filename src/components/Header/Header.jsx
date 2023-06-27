@@ -11,7 +11,6 @@ const Header = () => {
         </div>
         
         <h1>Sakura Tarot</h1>
-
     </div>
     );    
 };
