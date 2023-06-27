@@ -1,0 +1,30 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Grenze&display=swap');
+
+
+.save-button-container {
+    display: flex;
+  align-items: center;
+}
+.button-save {
+    width:293px ;
+    height: 56px;
+    background-color:#EFDF53 ;
+    border: solid;
+    border-color: #830C3A;
+    border-width: 2px;
+    font-family: Grenze;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    margin: 50px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.button-save:hover {
+    background-color: #FBC403; /* Cambiamos el color de fondo al hacer hover */
+  }
+
+.img-save{
+    cursor: pointer;
+}
