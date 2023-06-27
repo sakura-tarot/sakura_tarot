@@ -1,6 +1,6 @@
 import React from 'react';
 import SaveButton from '../../components/Save-button/SaveButton';
-import PopupComment from '../../components/PopPup/CommentPopup';
+import PopupComment from '../../components/PopPup/CommentPopup/CommentPopup';
 
 
 const TarotReading = () => {
