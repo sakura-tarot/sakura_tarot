@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze&display=swap');
+
+.popup-history-container{
+    width: 432px;
+    height: 613px;
+    border-radius: 15px;
+    background-color: #EFDF53;
+    border: solid;
+    border-color: #830C3A;
+    border-width: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Grenze;
+    font-size: 24px;
+    color: black;
+    position: relative;
+}
+.close-container{
+    width:21.56px ;
+    height: 21.56px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+}
+.popup-box{
+    
+   width: 398px;
+   height:420px;
+   border-radius: 10px;
+   border-color: black;
+   border: solid;
+   background-color: transparent;
+   font-size: 20px;
+   
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-icon{
+    width: 24.69px;
+    height: 24.69px;
+    margin-right: 10px;
+}
+.input-history{
+    width: 329px;
+    height: 47px;
+    border-radius: 10px;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: transparent;
+}
