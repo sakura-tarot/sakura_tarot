@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root { 
+    --pink: #FFD8DB;
+    --purple: #830C3A;
+    --yellow: #EFDF53; 
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
