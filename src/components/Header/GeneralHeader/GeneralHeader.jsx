@@ -1,12 +1,13 @@
 import React from 'react';
 import './GeneralHeader.css';
-import IconHome from '../../assets/img/home-icon.svg';
+import IconHome from '../../../assets/img/home-icon.svg';
+import { Link } from 'react-router-dom';
 
 const GeneralHeader = () => {
     return ( 
         <header className='header-container'>
             <div className='icon-home'>
-                    <img  src={IconHome} alt='icon-home'/>
+                   <Link to='/'><img  src={IconHome} alt='icon-home'/></Link>
             </div>
             
             <h1>Sakura Tarot</h1>

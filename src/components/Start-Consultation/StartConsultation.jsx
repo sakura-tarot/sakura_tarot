@@ -2,6 +2,7 @@ import React from 'react';
 import './StartConsultation.css';
 import ImageMagicWand from '../../assets/img/magic-wand.svg';
 import ImageYellowCat from '../../assets/img/yellow-cat.jpg';
+import { Link } from 'react-router-dom';
 
 const StartConsultation = () => {
     return (
@@ -13,7 +14,9 @@ const StartConsultation = () => {
             <p>Voy a explorar lo más profundo de tu ser. ¿Estás listo?</p>
           </div>
 
-          <button className="consultation-accepted">Listo</button>
+          <Link to='/tarot-reading'>
+            <button className="consultation-accepted">Listo</button>
+          </Link>
         </div>
 
         <img 

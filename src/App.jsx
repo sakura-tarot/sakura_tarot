@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
-import HomePage from './pages/Home/HomePage'
+import { BrowserRouter } from 'react-router-dom'
+import Application from './Application/Application'
 
 function App() {
-
   return (
     <>
-      <HomePage/>
+      <BrowserRouter>
+        <Application/>
+      </BrowserRouter>
     </>
   )
 }
