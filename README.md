@@ -31,7 +31,8 @@ A list of technologies or tools used within the project:
 
 ## 👾 Developers
 
-- Manuela Perez (Scrum Master - Developer)
-- Jacinemi Urquiola (Product Owner - Developer)
-- Rosmery Medina (Developer)
-- Valentina Rios (Developer)
+ 
+- [Manuela Perez](https://github.com/mperez-a) Scrum Master - Developer
+- [Jacinemi Urquiola](https://github.com/JacinemiUA) Product Owner - Developer
+- [Rosmery Medina](https://github.com/rousmedina) Developer
+- [Valentina Rios](https://github.com/valblue21) Developer
