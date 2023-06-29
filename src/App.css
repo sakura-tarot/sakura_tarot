@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;500;600;700&display=swap');
 
 :root { 
-    --pink: #FFD8DB;
-    --purple: #830C3A;
-    --yellow: #EFDF53; 
-    --black: #000000;
+    --bg-general: #FFD8DB;
+    --purple-text: #830C3A;
+    --purple-comment: #830C3A;
+    --purple-border: #830C3A;
+    --light-yellow: #EFDF53; 
+    --dark-yellow: #FBC403;
 }
 
 * {
@@ -15,4 +17,5 @@
 
   body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-general);
   }
