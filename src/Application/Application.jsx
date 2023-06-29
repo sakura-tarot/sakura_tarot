@@ -10,5 +10,5 @@ export default function Aplication() {
                 <Route exact path='/tarot-reading' element={<TarotReading/>}/>      
             </Routes>
         </>
-  )
+    )
 }
