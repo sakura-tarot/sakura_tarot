@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+ /* import React, { useState } from 'react';
 import './SaveButton.css';
 import PopupHistory from '../PopPup/HistoryPopup/HistoryPopup';
 import PopupComment from '../PopPup/CommentPopup/CommentPopup';
@@ -16,11 +16,28 @@ const SaveButton = () => {
   return (
     <div className='save-button-container'>
       <button onClick={handleClick} className='button-save'>
-        GUARDAR
+       GUARDAR
       </button>
 
       {showPopupComment && <PopupComment />}
       <PopupHistory />
+    </div>
+  );
+};
+
+export default SaveButton;
+ */
+import React, { useState } from 'react';
+import './SaveButton.css';
+import PopupComment from '../PopPup/CommentPopup/CommentPopup';
+import PopupHistory from '../PopPup/HistoryPopup/HistoryPopup';
+
+
+const SaveButton = () => {
+  return (
+    <div>
+     <PopupComment />
+    <PopupHistory />
     </div>
   );
 };
