@@ -27,6 +27,7 @@ const PopupHistory = () => {
                     className='close-container'/>
 
           <div className="popup-box">
+        
                 <div className='box-container'>
                     <h3>PASADO:</h3>
                     <p>lectura pasado</p>

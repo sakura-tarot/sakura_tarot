@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Grenze&display=swap');
 
+.img-save{
+    cursor: pointer;
+}
 .popup-history-container{
     width: 432px;
     height: 613px;
@@ -24,6 +27,7 @@
     top: 0;
     right: 0;
     transform: translate(-50%, 50%);
+    cursor: pointer;
 }
 .popup-box{
     

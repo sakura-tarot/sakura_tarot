@@ -25,7 +25,3 @@
 .button-save:hover {
     background-color: #FBC403; /* Cambiamos el color de fondo al hacer hover */
   }
-
-.img-save{
-    cursor: pointer;
-}

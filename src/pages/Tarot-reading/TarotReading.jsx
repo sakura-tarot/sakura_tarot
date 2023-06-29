@@ -9,7 +9,6 @@ const TarotReading = () => {
     <div>
     
       <SaveButton />
-      <PopupComment />
      
     </div>
   );
