@@ -1,6 +1,6 @@
 ### Team: Witchy Code
 
-# 🎧 Sakura Tarot
+# 🔮 Sakura Tarot
 Develop a virtual tarot application that consumes the API of Sakura cards which tells us our past, present and future.
 The idea is that within the page, we can select three cards, and see the meaning returned by the API https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/, and have the option to save the result, as well as a description of how I felt at the moment.
 
