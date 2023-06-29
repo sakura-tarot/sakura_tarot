@@ -1,10 +1,12 @@
-import './TarotReading.css';
-import ReverseSakuraCard from '../'
+import React from "react"
+import GeneralHeader from "../../components/Header/GeneralHeader/GeneralHeader"
 
-function TarotReading() {
-	return (
-	<div>TarotReading</div>
-	)
+function TarotReading(){
+    return (
+        <>
+            <GeneralHeader />
+        </>
+    )
 }
 
 export default TarotReading
