@@ -1,6 +1,7 @@
 import React from 'react';
 import './SaveButton.css';
 import SaveIcons from '../../assets/img/save-icon.svg';
+import PopupHistory from '../PopPup/HistoryPopup/HistoryPopup';
 
 class SaveButton extends React.Component {
   handleClick = () => {
@@ -14,7 +15,9 @@ class SaveButton extends React.Component {
         <button onClick={this.handleClick} className='button-save'>
           GUARDAR
         </button>
-        <img className= 'img-save' src={SaveIcons} alt="This is the soundwave company logo" />
+      
+        <PopupHistory />
+       
       </div>
     );
   }

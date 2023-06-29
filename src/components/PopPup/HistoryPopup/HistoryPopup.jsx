@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './HistoryPopup.css';
 import CloseIcon from '../../../assets/img/close-icon-purple.svg';
 import UserIcon from '../../../assets/img/user-icon.svg'
+import SaveIcons from '../../../assets/img/save-icon.svg';
+
+
 const PopupHistory = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -11,7 +14,8 @@ const PopupHistory = () => {
 
   return (
     <div>
-      <button onClick={handlePopupToggle}>Abrir Popup</button>
+        <img className= 'img-save' src={SaveIcons} alt="This is the soundwave company logo" onClick={handlePopupToggle} />
+      
 
       {isPopupOpen && (
         <div className="popup-history-container">
@@ -23,16 +27,16 @@ const PopupHistory = () => {
                     className='close-container'/>
 
           <div className="popup-box">
-    
-                    <h3>PRESENTE:</h3>
-                    <p>Respuesta de la API presente</p>
+                <div className='box-container'>
+                    <h3>PASADO:</h3>
+                    <p>lectura pasado</p>
 
                     <h3>PRESENTE:</h3>
-                    <p>Respuesta de la API presente</p>
+                    <p>lectura presente</p>
 
                     <h3>FUTURO:</h3>
-                    <p>Respuesta de la API futuro</p>
-
+                    <p>lectura futuro</p>
+                </div>
              <div className='footer-container'>
                      <img
                         src={UserIcon}

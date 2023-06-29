@@ -10,7 +10,7 @@ const TarotReading = () => {
     
       <SaveButton />
       <PopupComment />
-      <PopupHistory />
+     
     </div>
   );
 };
