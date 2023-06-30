@@ -1,0 +1,35 @@
+.App {
+    text-align: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .card-container {
+    margin: 60px;
+    cursor: pointer;
+  }
+  
+  .card-front,
+  .card-back {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    width: 200px;
+    height: 300px;
+  }
+  
+  .card-back p {
+    text-align: center;
+    margin-top: 180px;
+  }
+  
+  
+  .texto{
+    padding: 0px;
+    margin-top: 0px;
+  }
