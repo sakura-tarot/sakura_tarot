@@ -25,4 +25,17 @@ h1 {
     justify-content: center;
     color: #830C3A
 }
+
+@media only screen and (max-width: 600px) {
+    .header-container{
+        width: 90%;
+    }
+    .icon-home img{
+    height: 2rem;
+    width: 3rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
     

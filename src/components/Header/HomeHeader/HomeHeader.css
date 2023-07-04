@@ -10,3 +10,16 @@ h1 {
     font-weight: 400;
     font-size: 3.9rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .header-container{
+        width: 90%;
+    }
+    .icon-home img{
+    height: 2rem;
+    width: 3rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
