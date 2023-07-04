@@ -1,0 +1,35 @@
+.start-consultation-container {
+    position: absolute;
+    top: 300px;
+}
+
+.contultation-alert-info {
+    display: flex;
+    width: 450px;
+}
+
+.image-wand {
+    width: 10.4375rem;
+    height: 5.75rem;
+    margin-left: -90px;
+}
+
+.consultation-accepted {
+    background-color: #FBC403;
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    left: 100px;
+    cursor: pointer;
+}
+
+.kero-image {
+    height: 12rem;
+    width: 10rem;
+    position: absolute;
+    left: 300px;
+    top: 20px;
+}
