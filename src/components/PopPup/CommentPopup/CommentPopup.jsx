@@ -1,18 +1,19 @@
-
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 import './CommentPopup.css';
-//Cambiar class por funcional y en console lo almaceno dentro de un estado
-const PopupComment = ({ saveContent }) => {
+
+const PopupComment = ({ saveContent, updateConsoleLog }) => {
   const [inputValue, setInputValue] = useState('');
   const [showPopup, setShowPopup] = useState(false);
+  const [consoleLog, setConsoleLog] = useState('');
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
 
   const handleAddClick = () => {
-    console.log('Agregar:', inputValue);
-    saveContent(inputValue); // Llama a la función saveContent y pasa el valor del input
+    setConsoleLog('Agregar: ' + inputValue);
+    saveContent(inputValue);
+    updateConsoleLog('Agregar: ' + inputValue); // Actualiza el estado consoleLog en PopupHistory
   };
 
   const handleTogglePopup = () => {
@@ -39,23 +40,49 @@ const PopupComment = ({ saveContent }) => {
           </div>
         </div>
       )}
+{/* 
+      <p>{consoleLog}</p> }
     </div>
   );
 };
 
-const ParentComponent = () => {
-  const [content, setContent] = useState('');
+export default PopupComment;
+ */
 
-  const saveContent = (value) => {
-    setContent(value); // Actualiza el estado content con el valor recibido desde PopupComment
+import React, { useState } from 'react';
+import './CommentPopup.css';
+
+const PopupComment = ({ saveContent, updateConsoleLog }) => {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const handleAddClick = () => {
+    const log = 'Agregar: ' + inputValue;
+    saveContent(inputValue);
+    updateConsoleLog(log);
   };
 
   return (
     <div>
-      <PopupComment saveContent={saveContent} />
-      <div>{content}</div> {/* Muestra el contenido guardado */}
+      <button className='button-save'>GUARDAR</button>
+
+      <div className="popup-container">
+        <div className="popup-content">
+          <input
+            type="text"
+            value={inputValue}
+            onChange={handleInputChange}
+            placeholder="¿Cómo te sientes con tu lectura de tarot?"
+            className='input-popup'
+          />
+          <button onClick={handleAddClick} className='button-add'>Agregar</button>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default ParentComponent;
+export default PopupComment;
