@@ -42,10 +42,15 @@
 .selected-cards-container {
 	position: absolute;
 	width: 150px;
-	height: 250px;
+	height: 150px;
 	display: flex;
 	flex-direction: row;
 	gap: 10px;
 	right: 400px;
 	top: 100px;
+}
+
+.clicked-card { 
+	width: 120px;
+
 }

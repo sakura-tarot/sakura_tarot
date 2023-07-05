@@ -40,15 +40,16 @@ function Cards() {
 			</div>
 
 			<div className='deck-container'>
-			 <div className="selected-cards-container">
-				{chosesCards.map((cardIndex, i) => (
-					<div key={i}>
-						<img src={cardIndex}
-						alt="Clicked Card"
-						className="clicked-card"
-						/>
-					</div>
-				))}
+				<div className="selected-cards-container">
+          {chosesCards.map((cardIndex, index) => (
+            <div key={index}>
+              <img
+                src={cardInfo[cardIndex].cardsReverse.sakuraReverse}
+                alt="Clicked Card"
+                className="clicked-card"
+              />
+            </div>
+          ))}
 				
 				{showResult && <StartConsultation />}
 			</div>  
