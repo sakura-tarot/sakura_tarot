@@ -1,25 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Cards.css';
-import ReverseSakuraCard from '../../assets/img/Reverso-Sakura.jpg';
+import GetRandomCards from '../../services/GetRandomCards';
 import StartConsultation from '../Start-Consultation/StartConsultation';
 
-const cards = [
-	ReverseSakuraCard,
-	ReverseSakuraCard,
-	ReverseSakuraCard,
-	ReverseSakuraCard
-]
-
 function Cards() {
-	const [selectedCards, setSelectedCards] = useState([]);
+    const [cardInfo, setCardInfo] = useState([])
+	const [chosesCards, setChosesCards] = useState([]);
 	const [showResult, setShowResult] = useState(false);
+	const [error, setError] = useState('');
 
-	const handleCardClick = (cardIndex) => {
-		if (selectedCards.length < 3 && !selectedCards.includes(cardIndex)) {
-			setSelectedCards([...selectedCards, cardIndex]);
+     useEffect(()=>{
+        GetRandomCards.getAll()
+        .then(response =>{ 
+                setCardInfo(response)
+        })
+		.catch(
+			setError('Lo sentimos, no se pudo encontrar ninguna carta 😥')
+		)
+    }, [setCardInfo])
+
+	const HandleCardClick = (cardIndex) => {
+		if (chosesCards.length < 3 && !chosesCards.includes(cardIndex)) {
+			setChosesCards([...chosesCards, cardIndex]);
 		}
 
-		if (selectedCards.length === 2) {
+		if (chosesCards.length === 2) {
 			setShowResult(true);
 		}
 	};
@@ -27,23 +32,27 @@ function Cards() {
 	return (
 		<div className='deck-container'>
 			<div className='cards-container'>
-			{cards.map((card, index) => (
-				<div className='card-container' key={index}>
-					<img src={card} alt="Reverse Sakura Card" onClick={() => handleCardClick(index)} />
-				</div>
-			))}
-			</div>
-			<div className="selected-cards-container">
-				{selectedCards.map((cardIndex) => (
-				<img
-				src={cards[cardIndex]}
-				alt="Clicked Card"
-				className="clicked-card"
-				key={cardIndex}
-				/>
+				{cardInfo.map((card, index) => (
+					<div className='card-container' key={index}>
+						<img src={card.cardsReverse.sakuraReverse} alt="Reverse Sakura Card" onClick={() => HandleCardClick(index)}/>
+					</div>
 				))}
-				{showResult && <StartConsultation />}
 			</div>
+
+			<div className='deck-container'>
+			 <div className="selected-cards-container">
+				{chosesCards.map((cardIndex, i) => (
+					<div key={i}>
+						<img src={cardIndex}
+						alt="Clicked Card"
+						className="clicked-card"
+						/>
+					</div>
+				))}
+				
+				{showResult && <StartConsultation />}
+			</div>  
+		</div>
 		</div>
 	)
 }
