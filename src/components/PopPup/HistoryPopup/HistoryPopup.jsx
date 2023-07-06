@@ -106,8 +106,7 @@ const PopupHistory = () => {
             </div>
             <div className='footer-container'>
               <img src={UserIcon} alt="usuario" className='user-icon' />
-              <input type="text" placeholder="¿Cómo te sientes con tu lectura de tarot?" className='input-history' />
-              <input type="text" value={consoleLog} readOnly className='input-history' />
+              <input type="text" placeholder="¿Cómo te sientes con tu lectura de tarot?" className='input-history' value={consoleLog} />
             </div>
           </div>
         </div>

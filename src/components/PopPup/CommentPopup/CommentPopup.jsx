@@ -60,7 +60,7 @@ const PopupComment = ({ saveContent, updateConsoleLog }) => {
   };
 
   const handleAddClick = () => {
-    const log = 'Agregar: ' + inputValue;
+    const log = inputValue;
     saveContent(inputValue);
     updateConsoleLog(log);
   };
@@ -86,3 +86,4 @@ const PopupComment = ({ saveContent, updateConsoleLog }) => {
 };
 
 export default PopupComment;
+
