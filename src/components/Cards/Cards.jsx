@@ -8,16 +8,30 @@ function Cards() {
 	const [chosesCards, setChosesCards] = useState([]);
 	const [showResult, setShowResult] = useState(false);
 	const [error, setError] = useState('');
+	const [shouldShuffle, setShouldShuffle] = useState(true);
 
      useEffect(()=>{
         GetRandomCards.getAll()
         .then(response =>{ 
                 setCardInfo(response)
+				setShouldShuffle(true);
         })
 		.catch(
 			setError('Lo sentimos, no se pudo encontrar ninguna carta 😥')
 		)
     }, [setCardInfo])
+
+	useEffect(() => {
+		if (shouldShuffle) {
+		  const mixedCards = [...cardInfo];
+		  for (let i = mixedCards.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[mixedCards[i], mixedCards[j]] = [mixedCards[j], mixedCards[i]];
+		  }
+		  setCardInfo(mixedCards);
+		  setShouldShuffle(false);
+		}
+	  }, [shouldShuffle, cardInfo]);
 
 	const HandleCardClick = (cardIndex) => {
 		if (chosesCards.length < 3 && !chosesCards.includes(cardIndex)) {
@@ -39,21 +53,17 @@ function Cards() {
 				))}
 			</div>
 
-			<div className='deck-container'>
-				<div className="selected-cards-container">
-          {chosesCards.map((cardIndex, index) => (
-            <div key={index}>
-              <img
-                src={cardInfo[cardIndex].cardsReverse.sakuraReverse}
-                alt="Clicked Card"
-                className="clicked-card"
-              />
-            </div>
-          ))}
-				
+			<div className="selected-cards-container">
+				<div className="choses-cards-container">
+					{chosesCards.map((cardIndex, index) => (
+						<div className="choses-cards-container" key={index}>
+							<img src={cardInfo[cardIndex].cardsReverse.sakuraReverse} alt="Clicked Card" className="clicked-card"/>
+						</div>
+					))}
+				</div>
+
 				{showResult && <StartConsultation />}
-			</div>  
-		</div>
+			</div>	  
 		</div>
 	)
 }

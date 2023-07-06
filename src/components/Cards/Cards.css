@@ -1,56 +1,101 @@
 .deck-container {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-}
-
-.card-container {
-	position: absolute;
-	left: 200px;
-	bottom: 250px;
-	transform: translateY(-50%);
-	width: 150px;
-	height: 220px;
-	z-index: 0;
-	transition: transform 0.5s;
-	cursor: pointer;
-}
-
-.card-container:nth-child(1) {
-	transform: translateX(50%) rotate(10deg);
-}
-
-.card-container:nth-child(2) {
-	transform: translateX(25%) rotate(0deg);
-}
-
-.card-container:nth-child(3) {
-	transform: translateX(0) rotate(-10deg);
-}
-
-.card-container:nth-child(4) {
-	transform: translateX(-25%) rotate(-20deg);
+	align-items: center;
+	align-content: center;
 }
 
 .card-container img {
-	width: 150px;
-	height: auto;
-	border: 1px solid #000;
-	border-radius: 5px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	width: 8rem;
+	border: 0.1rem solid #000;
+	border-radius: 0.3rem;
 }
 
-.selected-cards-container {
-	position: absolute;
-	width: 150px;
-	height: 150px;
+.cards-container {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+.card-container {
+    position: absolute;
+	left: 12vmin;
+    transition: transform 350ms ease 300ms, left 200ms ease 300ms;  
+}
+
+.cards-container:hover .card-container:nth-child(5n + 1) {
+	left: 20px;
+	transform: rotate(-15deg);
+	transition: transform 350ms, left 200ms;
+}
+
+.cards-container:hover .card-container:nth-child(5n + 1):hover {
+	transition: transform 350ms ease 80ms, left 200ms;
+	transform: rotate(-15deg) translate(0px, -25px);
+}
+
+.cards-container:hover .card-container:nth-child(5n + 2) {
+	left: 40px;
+	transform: rotate(-5deg);
+	transition: transform 350ms, left 200ms;
+}
+
+.cards-container:hover .card-container:nth-child(5n + 2):hover {
+	transition: transform 350ms ease 80ms, left 200ms;
+	transform: rotate(-5deg) translate(0px, -25px);
+}
+
+.cards-container:hover .card-container:nth-child(5n + 3) {
+	left: 60px;
+	transform: rotate(5deg);
+	transition: transform 350ms, left 200ms;
+}
+
+.cards-container:hover .card-container:nth-child(5n + 3):hover {
+	transition: transform 350ms ease 80ms, left 200ms;
+	transform: rotate(5deg) translate(0px, -25px);
+}
+
+.cards-container:hover .card-container:nth-child(5n + 4) {
+	left: 80px;
+	transform: rotate(15deg);
+	transition: transform 350ms, left 200ms;
+}
+
+.cards-container:hover .card-container:nth-child(5n + 4):hover {
+	transition: transform 350ms ease 80ms, left 200ms;
+	transform: rotate(15deg) translate(0px, -25px);
+}
+
+.cards-container:hover .card-container:nth-child(5n + 5) {
+	left: 100px;
+	transform: rotate(25deg);
+	transition: transform 350ms, left 200ms;
+}
+
+.cards-container:hover .card-container:nth-child(5n + 5):hover {
+	transition: transform 350ms ease 80ms, left 200ms;
+	transform: rotate(25deg) translate(0px, -25px);
+}
+
+.selected-cards-container{
+	width: 30rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5;
+}
+
+.choses-cards-container{
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
-	right: 400px;
-	top: 100px;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	gap: 1rem;
 }
 
-.clicked-card { 
-	width: 120px;
-
+.choses-cards-container img{
+	width: 5rem;
 }

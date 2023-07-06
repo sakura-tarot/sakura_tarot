@@ -1,17 +1,23 @@
 .start-consultation-container {
-    position: absolute;
-    top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.consultation-alert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
 }
 
 .contultation-alert-info {
     display: flex;
-    width: 450px;
-}
-
-.image-wand {
-    width: 10.4375rem;
-    height: 5.75rem;
-    margin-left: -90px;
+    align-items: center;
 }
 
 .consultation-accepted {
@@ -20,16 +26,14 @@
     border-radius: 0.5rem;
     border: none;
     font-weight: bold;
-    font-size: 1rem;
-    position: absolute;
-    left: 100px;
-    cursor: pointer;
+    font-size: 0.8rem;
 }
 
 .kero-image {
-    height: 12rem;
-    width: 10rem;
-    position: absolute;
-    left: 300px;
-    top: 20px;
+    height: 10rem;
+    width: 8rem;
+}
+
+.image-wand{
+    width: 8rem;
 }
