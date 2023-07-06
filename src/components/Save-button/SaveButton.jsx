@@ -7,7 +7,7 @@ import PopupHistory from '../PopPup/HistoryPopup/HistoryPopup';
 
 const SaveButton = () => {
   return (
-    <div>
+    <div className='save-button'>
      <PopupComment />
     <PopupHistory />
     </div>

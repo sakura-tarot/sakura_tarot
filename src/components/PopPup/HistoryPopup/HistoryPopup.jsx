@@ -1,4 +1,4 @@
-/*    import React, { useState } from 'react';
+    import React, { useState } from 'react';
 import './HistoryPopup.css';
 import CloseIcon from '../../../assets/img/close-icon-purple.svg';
 import UserIcon from '../../../assets/img/user-icon.svg'
@@ -57,9 +57,9 @@ const PopupHistory = () => {
 
 export default PopupHistory;
 
- */
 
-import React, { useState } from 'react';
+
+/* import React, { useState } from 'react';
 import './HistoryPopup.css';
 import CloseIcon from '../../../assets/img/close-icon-purple.svg';
 import UserIcon from '../../../assets/img/user-icon.svg';
@@ -119,3 +119,4 @@ const PopupHistory = () => {
 };
 
 export default PopupHistory;
+ */

@@ -1,4 +1,4 @@
-/* import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import './CommentPopup.css';
 
 const PopupComment = ({ saveContent, updateConsoleLog }) => {
@@ -40,16 +40,14 @@ const PopupComment = ({ saveContent, updateConsoleLog }) => {
           </div>
         </div>
       )}
-{/* 
-      <p>{consoleLog}</p> }
     </div>
   );
 };
 
 export default PopupComment;
- */
 
-import React, { useState } from 'react';
+
+/* import React, { useState } from 'react';
 import './CommentPopup.css';
 
 const PopupComment = ({ saveContent, updateConsoleLog }) => {
@@ -86,4 +84,4 @@ const PopupComment = ({ saveContent, updateConsoleLog }) => {
 };
 
 export default PopupComment;
-
+ */
