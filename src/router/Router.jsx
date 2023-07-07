@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "../pages/Home/HomePage";
 import TarotReading from "../pages/Tarot-reading/TarotReading";
 
-export default function Aplication() {
+export default function Router() {
     return(
         <>
             <Routes>

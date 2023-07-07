@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
 import { BrowserRouter } from 'react-router-dom'
-import Application from './Application/Application'
+import Router from './router/Router'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Application/>
+        <Router/>
       </BrowserRouter>
     </>
   )

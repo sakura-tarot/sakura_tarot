@@ -13,6 +13,8 @@
 }
 
 .cards-container {
+	margin-top: 14rem;
+	margin-bottom: 14rem;
 	display: flex;
     align-items: center;
     justify-content: center;

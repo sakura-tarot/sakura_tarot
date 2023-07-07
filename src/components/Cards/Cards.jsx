@@ -35,7 +35,9 @@ function Cards() {
 
 	const HandleCardClick = (cardIndex) => {
 		if (chosesCards.length < 3 && !chosesCards.includes(cardIndex)) {
-			setChosesCards([...chosesCards, cardIndex]);
+			const updatedChosesCards = [...chosesCards, cardInfo[cardIndex]];
+			setChosesCards(updatedChosesCards);
+			localStorage.setItem('mycards', JSON.stringify(updatedChosesCards));
 		}
 
 		if (chosesCards.length === 2) {
@@ -48,7 +50,7 @@ function Cards() {
 			<div className='cards-container'>
 				{cardInfo.map((card, index) => (
 					<div className='card-container' key={index}>
-						<img src={card.cardsReverse.sakuraReverse} alt="Reverse Sakura Card" onClick={() => HandleCardClick(index)}/>
+						<img src={card.cardsReverse.sakuraReverse } alt="Reverse Sakura Card" onClick={() => HandleCardClick(index)}/>
 					</div>
 				))}
 			</div>
@@ -57,7 +59,7 @@ function Cards() {
 				<div className="choses-cards-container">
 					{chosesCards.map((cardIndex, index) => (
 						<div className="choses-cards-container" key={index}>
-							<img src={cardInfo[cardIndex].cardsReverse.sakuraReverse} alt="Clicked Card" className="clicked-card"/>
+							<img src={cardIndex.cardsReverse.sakuraReverse } alt="Clicked Card" className="clicked-card"/>
 						</div>
 					))}
 				</div>
