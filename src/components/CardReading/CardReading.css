@@ -1,14 +1,15 @@
 .card-reading-container{
     width: 100%;
+    height: 20rem;
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 4.5rem;
     justify-content: center;
 }
 
 #card-reading-type img{
-    width: 10rem;
-    height: 20rem;
+    width: 9rem;
+    height: 19rem;
 }
 
 #card-reading-type {

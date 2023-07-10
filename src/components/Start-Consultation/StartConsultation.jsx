@@ -19,8 +19,7 @@ const StartConsultation = () => {
           </Link>
         </div>
 
-        <img 
-        className='kero-image' src={ImageYellowCat} alt='Image of Kero' />
+        <img className='kero-image' src={ImageYellowCat} alt='Image of Kero' />
       </div>
     );
 };
